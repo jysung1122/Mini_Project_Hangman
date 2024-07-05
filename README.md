@@ -61,3 +61,5 @@ for i in range(len(chosen_word)) :
 #Hint - Don't worry about getting the user to guess the next letter. We'll tackle that in step 3.
 print(display)
 ```
+
+### 3. 플레이어가 이겼는지 확인하기
