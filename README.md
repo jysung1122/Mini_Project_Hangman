@@ -28,3 +28,5 @@ for i in range(len(chosen_word)) :
     else :
         print("Wrong")
 ```
+
+### 2. 빈칸을 맞춘 글자로 변환하기
