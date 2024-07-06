@@ -50,3 +50,35 @@ print(display)
 ```
 
 ### 3. 플레이어가 이겼는지 확인하기
+```
+#Step 3
+
+import random
+word_list = ["aardvark", "baboon", "camel"]
+chosen_word = random.choice(word_list)
+word_length = len(chosen_word)
+
+#Testing code
+print(f'Pssst, the solution is {chosen_word}.')
+
+#Create blanks
+display = []
+for _ in range(word_length):
+    display += "_"
+
+while True :
+    
+    guess = input("Guess a letter: ").lower()
+    
+    #Check guessed letter
+    for position in range(word_length):
+        letter = chosen_word[position]
+        if letter == guess:
+            display[position] = letter
+
+    print(display)
+
+    if "_" not in display :
+        print("You win!")
+        break
+```
